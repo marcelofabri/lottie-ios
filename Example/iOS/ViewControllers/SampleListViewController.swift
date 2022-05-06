@@ -111,6 +111,15 @@ final class SampleListViewController: CollectionViewController {
       .didSelect { [weak self] context in
         self?.show(ControlsDemoViewController(), sender: context.view)
       }
+
+    LinkView.itemModel(
+      dataID: "UIPageViewController Demo",
+      content: .init(animationName: nil, title: "UIPageViewController Demo"))
+      .didSelect { [weak self] context in
+        self?.show(
+          AnimationPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil),
+          sender: context.view)
+      }
   }
 
   private func configureSettingsMenu() {

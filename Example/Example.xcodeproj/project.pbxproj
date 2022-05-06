@@ -34,6 +34,7 @@
 		2EA15B1D27612AE300CE8F1F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2EA15B1C27612AE300CE8F1F /* Lottie */; };
 		2EC6E5082763D981002E091C /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6E5072763D981002E091C /* LinkView.swift */; };
 		2EC6E5102763E79F002E091C /* AnimationPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6E50F2763E79F002E091C /* AnimationPreviewViewController.swift */; };
+		6DB782112825E19B00A6B651 /* AnimationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB782102825E19B00A6B651 /* AnimationPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		2EA15A122761299C00CE8F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EC6E5072763D981002E091C /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		2EC6E50F2763E79F002E091C /* AnimationPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPreviewViewController.swift; sourceTree = "<group>"; };
+		6DB782102825E19B00A6B651 /* AnimationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				2E362A1D2762BA06006AE7D2 /* SampleListViewController.swift */,
+				6DB782102825E19B00A6B651 /* AnimationPageViewController.swift */,
 				2EC6E50F2763E79F002E091C /* AnimationPreviewViewController.swift */,
 				2E1670C22784F009009CDED3 /* ControlsDemoViewController.swift */,
 			);
@@ -340,6 +343,7 @@
 				2E97E3052767E7C600FE22C3 /* Configuration.swift in Sources */,
 				2E1670C32784F009009CDED3 /* ControlsDemoViewController.swift in Sources */,
 				2E1670CA2784F123009CDED3 /* AnimatedButtonRow.swift in Sources */,
+				6DB782112825E19B00A6B651 /* AnimationPageViewController.swift in Sources */,
 				2E362A1E2762BA06006AE7D2 /* SampleListViewController.swift in Sources */,
 				2E9E77AF27602BD400C84BA3 /* AppDelegate.swift in Sources */,
 				2EC6E5082763D981002E091C /* LinkView.swift in Sources */,

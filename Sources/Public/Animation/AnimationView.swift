@@ -902,6 +902,7 @@ final public class AnimationView: AnimationViewBase {
     /// When A viewA owns superViewB, it removes the superViewB from the window. At this point, viewA still owns superViewB and triggers the viewA method: -didmovetowindow
     guard superview != nil else { return }
 
+    print("self: \(self), windowNil: \(window == nil)")
     if window != nil {
       updateAnimationForForegroundState()
     } else {

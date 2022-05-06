@@ -8,8 +8,9 @@ class AnimationPreviewViewController: UIViewController {
 
   // MARK: Lifecycle
 
-  init(_ animationName: String) {
+  init(_ animationName: String, backgroundBehavior: LottieBackgroundBehavior = .pauseAndRestore) {
     self.animationName = animationName
+    self.backgroundBehavior = backgroundBehavior
     super.init(nibName: nil, bundle: nil)
     title = animationName.components(separatedBy: "/").last!
     animationView.loopMode = .autoReverse
@@ -43,7 +44,7 @@ class AnimationPreviewViewController: UIViewController {
     slider.value = 0
     view.addSubview(slider)
 
-    animationView.backgroundBehavior = .pauseAndRestore
+    animationView.backgroundBehavior = backgroundBehavior
     animationView.translatesAutoresizingMaskIntoConstraints = false
 
     engineLabel.font = .preferredFont(forTextStyle: .footnote)
@@ -100,6 +101,7 @@ class AnimationPreviewViewController: UIViewController {
   private let animationView = AnimationView()
   private let slider = UISlider()
   private let engineLabel = UILabel()
+  private let backgroundBehavior: LottieBackgroundBehavior
 
   private var displayLink: CADisplayLink?
 
